@@ -4,7 +4,15 @@ import env from './.env';
 export const environment = {
   production: true,
   version: env.npm_package_version,
-  serverUrl: '/api',
+  serverUrl: 'https://tapha-shop-api.herokuapp.com',
   envName: 'PROD',
-  API_URL: 'assets/api'
+  API_URL: '/api'
 };
+
+// export const environment = {
+//   production: true,
+//   version: env.npm_package_version,
+//   serverUrl: '/api',
+//   envName: 'PROD',
+//   API_URL: 'assets/api'
+// };

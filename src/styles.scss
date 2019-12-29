@@ -12,11 +12,11 @@
 
 // import custom component themes here
 @import 'styles-reset.scss-theme';
-@import 'app/modules/home/page/project-item/project-container.component.scss-theme.scss';
+// @import 'app/modules/home/page/project-item/project-container.component.scss-theme.scss';
 
 @mixin custom-components-theme($theme) {
   @include my-styles-reset-theme($theme);
-  @include my-project-container-component-theme($theme);
+  // @include my-project-container-component-theme($theme);
 }
 
 .my-light-theme {

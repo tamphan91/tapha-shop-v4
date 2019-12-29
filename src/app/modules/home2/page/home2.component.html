@@ -1,0 +1,14 @@
+<div id="content">
+    <div>  
+      <h1>Nikes {{(nikeDatas$ | async)?.total}}</h1>
+    </div>
+    <!-- <ul>
+        <li *ngFor="let item of nikeData$ | async">{{item.link}}</li>
+    </ul> -->
+    <ngx-masonry [useImagesLoaded]="true" [options]="{ transitionDuration: '0.8s' }">
+      <ngxMasonryItem class="masonry-item" *ngFor="let item of (nikeDatas$ | async)?.items">
+        <app-nike-item [nike]="item"></app-nike-item>
+      </ngxMasonryItem>
+    </ngx-masonry>
+  </div>
+  
